@@ -91,13 +91,25 @@ main {
 
 /*RODAPÉ*/
 footer {
-	text-align: center;
+	/* text-align: center; */
 	background: url("bg.jpg");
 	padding: 15px 0 0 0;
 	font-size: 20px;
 	width: 100%;
 	height: 100%;
-	
+}
+
+.contatos{
+	color: white;
+	text-align: right;
+	right: 5%;	
+	display: inline;
+	position: absolute;
+}
+
+.img-bd{
+	display: inline;
+	padding-left: 10%;
 }
 
 footer img {
@@ -110,7 +122,6 @@ footer img {
 	font-size: 25px;
 	margin: 0 0 0 0;
 	text-align: center;
-
 	padding: 25px 25px 25px 25px;
 }
 
@@ -144,6 +155,7 @@ button a {
 
 #img-database-footer {
 	width: 50%;
+	display: inline;
 }
 
 aside li {
