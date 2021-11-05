@@ -15,10 +15,13 @@ def taxa(ValorAtualizado):
 
 def main():
     valor = float(input(''))
+
     atualiza_preco(valor)
     ValorAtualizado = atualiza_preco(valor)
+
     taxa(ValorAtualizado)
     TaxaAtualizada = taxa(ValorAtualizado)
+    
     print(f'{ValorAtualizado:.2f}')
     print(f'{TaxaAtualizada:.2f}')
 
