@@ -1,0 +1,27 @@
+<!-- 2.    Faça um script em que o usuário entre com quatro notas, 
+em uma caixa de diálogo. Em seguida, crie uma lista e exiba as 
+notas também com caixa de diálogo. Calcule a média e exiba na página. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Laço de Repetição</h1>
+		<script>
+            var entrada
+            var entrada_lista = []
+            var soma = 0
+            for (entrada = 0; entrada < 4; entrada++) {
+                entrada_lista.push(Number.parseInt(window.prompt(`Digite a ${entrada+1}° nota: `)))
+                soma = soma + entrada_lista[entrada]
+            } 
+            window.alert(`n1°: ${entrada_lista[0]}, n2°: ${entrada_lista[1]}, n3°: ${entrada_lista[2]}, n4°: ${entrada_lista[3]}`)
+            window.alert(` a média é ${soma/4} `)
+		</script>
+</body>
+</html>

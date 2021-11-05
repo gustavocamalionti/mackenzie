@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+
+        function chamada_lista(cor_escolhida) {
+            for (cont = 0; cont < 4; cont++) {
+                window.alert(`${times_esportes[cor_escolhida][cont]}`)
+            }
+        }
+
+        var times_esportes = [
+                                [
+                                    ['Basquete'], ['Lakers'], ['6'], ['Dourado']
+                                ],
+                                
+                                [
+                                    ['Futebol'], ['São Paulo'], ['12'], ['Vermelho']
+                                ],
+                                
+                                [
+                                    ['Vôlei'], ['Nestlé'], ['6'], ['Azul']
+                                ]
+                            ]
+
+        window.alert(times_esportes)
+
+        cor_escolhida = Number.parseInt(window.prompt(`Escolha uma cor predominante: \n [0] - Dourado \n [1] - Vermelho \n [2] - Azul`).trim())
+        var cont = 0
+        
+        chamada_lista(cor_escolhida)
+            
+    </script>
+</html>

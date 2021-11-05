@@ -1,0 +1,21 @@
+<!-- 1.    Faça um script em que apareça uma mensagem na tela com a seguinte pergunta: 
+“Você mora na cidade de São Paulo?” Se sim, carregar uma imagem qualquer de 
+São Paulo; caso contrário, a imagem da sua cidade. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+		<h2>Condicional com if</h2>
+		<script>
+            var resposta
+			resposta = window.confirm('Você mora na cidade de São Paulo?');
+			if(resposta == true)
+				document.write('<img src="sao-paulo.jpg">');
+			else
+				document.write('<img src="indaiatuba.jpg">');
+		</script>
+</body></html>
+
