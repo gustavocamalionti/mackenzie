@@ -1,0 +1,77 @@
+@charset "UTF8";
+
+/* variáveis: no CSS3, foram introduzidas as variáveis que servem para 
+armazenar valores comumente usados no estilo, como cores e tamanhos. 
+Agruparemos as variáveis no começo do documento para facilitar o uso. */
+
+:root{
+    --pageBackground: #f0f0f0;
+    --cardBackground: #fff;
+    --fontColor: #393939;
+    --shadows: rgba(57,57,57, 0.2);
+}
+
+
+/* fontes: aqui importaremos todas as fontes usadas no documento, 
+sejam elas arquivos locais ou de algum serviço de terceiros. */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* reset: Alguns elementos html já vêm com uma pré-formatação de 
+estilo, mas é muito comum que as ignoremos e comecemos a trabalhar 
+com elementos sem formatação. Nesta seção, removeremos os atributos 
+comuns que não são necessários para o projeto. */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* estilo básicos: aqui, colocaremos os estilos que são comuns para 
+toda e qualquer espécie de dispositivo e tela. */
+    * {
+        font-family: 'Roboto', sans-serif;
+        color: var(--fontColor);
+    }
+
+    body {
+        background-color: var(--pageBackground);
+    }
+
+    article {
+        margin: 20px;
+        box-shadow: 0 0 10px var(--shadows);
+        border-radius: 10px;
+        background-color: var(--cardbackground);
+        padding: 20px;
+    }
+
+    img{
+        width: 50%;
+    }
+/* mobile: criaremos aqui todos os seletores específicos para a 
+apresentação em dispositivos móveis. */
+    * {
+        font-size: 20pt
+    }
+
+/* web e outros tamanhos: por fim, criaremos os seletores para 
+outros dispositivos, inclusive os navegadores comuns. */
+
+    @media only screen and (min-width : 920px) {
+        *{
+            font-size: 14pt;
+        }
+
+        body{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        article{
+            width: 30%
+        }
+        
+    }
