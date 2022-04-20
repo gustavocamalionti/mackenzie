@@ -1,0 +1,23 @@
+#main{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+ul{
+    font-size: small;
+}
+
+h4{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    width: 17rem;
+    box-shadow: 10px 10px 40px rgb(146, 146, 146);
+    /* padding-right: 1rem; */
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}

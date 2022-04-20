@@ -1,0 +1,55 @@
+#main{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+ul{
+    font-size: small;
+}
+
+h4{
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 9rem;
+}
+
+h6 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight:bolder
+}
+
+.card{
+    display: inline-block;
+    width: 23rem;
+    box-shadow: 10px 10px 40px rgb(146, 146, 146);
+    /* padding-right: 1rem; */
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+#primeiro-card{
+    position:absolute;
+    right: 0;
+    border-width: 12px;
+}
+
+#segundo-card{
+    position:absolute;
+    left: 1;
+    border-width: 12px;
+    
+}
+
+li {
+    font-size:1rem;
+}
+
+span{
+    height: 10px;
+    display: block;
+    background-color: aquamarine;
+    margin-top:5px;
+    border-radius:5px;
+}
