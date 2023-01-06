@@ -9,11 +9,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class OperacoesController {
 	
 	
-	@GetMapping("/sum/{n1}/{n2}")
+	@GetMapping("/sistema/rest/funcionarios")
 	@ResponseBody
-	public String soma(@PathVariable("n1") Integer n1, @PathVariable("n2") Integer n2 ){
-		int soma = n1+n2;
-		return "A SOMA entre " + n1 + " e " + n2 + " vale: " + soma;		
+	public String funcionarios(){
+		return "teste";		
 	}
 	
 	@GetMapping("/sub/{n1}/{n2}")

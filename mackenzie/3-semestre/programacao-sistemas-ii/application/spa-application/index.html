@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumindo API-REST</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <form action="">
+                <div class="form-group">
+                    <label for="txtNumat" class="control-label">numat</label>
+                    <input class="form-control" type="text" id="txtNumat" name="txtNumat">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtNome" class="control-label">Nome</label>
+                    <input class="form-control" type="text" id="txtNome" name="txtNome">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtSalario" class="control-label">Salário</label>
+                    <input class="form-control" type="text" id="txtSalario" name="txtSalario">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtSexo" class="control-label">Sexo</label>
+                    <input class="form-control" type="text" id="txtSexo" name="txtSexo">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtNdepto" class="control-label">ndepto</label>
+                    <input class="form-control" type="text" id="txtNdepto" name="txtNdepto">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtNsuper" class="control-label">txtNsuper</label>
+                    <input class="form-control" type="text" id="txtNsuper" name="txtNsuper">
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            
+
+            <div class="col-3 text-center">
+                <button class="btn btn-primary" onclick="consultar()">Consultar</button>
+            </div>
+            <div class="col-3 text-center">
+                <button class="btn btn-success" onclick="adicionar()">Adicionar</button>
+            </div>
+            <div class="col-3 text-center">
+                <button class="btn btn-warning" onclick="atualizar()">Atualizar</button>
+            </div>
+            <div class="col-3 text-center">
+                <button class="btn btn-danger" onclick="deletar()">Remover</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js\script.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script> -->
+</body>
+</html>
