@@ -7,7 +7,7 @@ class Tank(object):
         self.name = name
         self.alive = True
         self.ammo = 5
-        self.armor = 60
+        self.armor = 40
 
     def __str__(self):
         if self.alive:
@@ -18,20 +18,20 @@ class Tank(object):
     def fire_at(self, enemy):
         if self.ammo >= 1:
             self.ammo -= 1
-            print(self.name, "fires on", enemy.name)
+            print(self.name, "Atacando ", enemy.name)
             enemy.hit()
         else:
-            print(self.name, "has no shells!")
+            print(self.name, "Não tem munição!")
 
     def hit(self):
         self.armor -= 20
-        print(self.name, "is hit")
+        print(self.name, "Tomou dano")
         if self.armor <= 0:
             self.explode()
 
     def explode(self):
         self.alive = False
-        print(self.name, "explodes!")
+        print(self.name, "Explodiu!")
 
 
 # meuTanque = Tank("Bob")
@@ -43,7 +43,12 @@ class Tank(object):
 start_game = True
 alfabeto = list(string.ascii_lowercase)
 
+titulo = 'BATALHA ENTRE TANKS'
+
 while start_game == True:
+    print('-=-'*20)
+    print(f'{titulo: ^60}')
+    print('-=-'*20)
 
     quantidade_tanques = int(input('Quantidade de tanques: '))
     while (quantidade_tanques <= 0 or quantidade_tanques > 10):
@@ -81,7 +86,6 @@ while start_game == True:
             opcoes.append(lista_auxiliar[i][0])
 
         escolha=""
-        print(opcoes)
         while escolha not in opcoes:
             escolha = str(input(f'Por favor, selecione uma opção válida: {opcoes} ')).strip()
 
